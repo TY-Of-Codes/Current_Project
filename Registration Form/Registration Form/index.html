@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="connect.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="surName">Surname</label>
+                            <input type="text" placeholder="Enter your surname" id="surName" name="surName" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Other Names(In Full)</label>
+                            <input type="text" placeholder="Enter your other names" id="otherName" name="otherName" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State of Origin</label>
+                            <input type="text" placeholder="Enter your origin state" id="stateOrg" name="stateOrg" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Local Government Area</label>
+                            <input type="text" placeholder="Enter your LGA" id="locGov" name="locGov" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Official Contact Address</label>
+                            <input type="text" placeholder="Enter your official address" id="offCon" name="offCon" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Title</label>
+                            <input type="text" placeholder="Enter the title" id="tiTle" name="tiTle" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your occupation" id="occupaTion" name="occupaTion" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Position/Rank</label>
+                            <input type="text" placeholder="Enter your position" id="posRan" name="posRan" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" id="birthDate" name="birthDate" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" id="eMail" name="eMail" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" id="mobNum" name="mobNum" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Area of Specialisaton</label>
+                            <input type="text" placeholder="Professional or Academic" id="areaSpec" name="areaSpec" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Official Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name of Next-of-Kin</label>
+                            <input type="text" placeholder="Next-of-Kin name" id="nextName" name="nextName" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address of Next-of-Kin</label>
+                            <input type="text" placeholder="Next-of-Kin address" id="nextAdd" name="nextAdd" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Relationship with Next-of-Kin</label>
+                            <input type="text" placeholder="Next-of-Kin relationship" id="nextRel" name="nextRel" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone No. of Next-of-Kin</label>
+                            <input type="number" placeholder="Next-of-Kin phone no." id="nextPhon" name="nextPhon" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Permanent Home Adderess</label>
+                            <input type="text" placeholder="Enter permanent address" id="permAdd" name="permAdd" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sponsor's Name(In Full)</label>
+                            <input type="text" placeholder="Enter sponsor's name" id="sponsNam" name="sponsNam" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sponsor's Address</label>
+                            <input type="text" placeholder="Enter sponsor's address" id="sponsAdd" name="sponsAdd" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Chalet Allocation Number</label>
+                            <input type="text" placeholder="Enter chalet number" id="chalNum" name="chalNum" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name of Registration Officer</label>
+                            <input type="text" placeholder="Enter officer's name" id="nameReg" name="nameReg" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Study Group Allocation</label>
+                            <input type="text" placeholder="Enter study group" id="studAll" name="studAll" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
