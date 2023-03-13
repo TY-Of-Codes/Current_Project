@@ -27,11 +27,8 @@
     if($conn->connect_error){
         die('Connection Failed : '.$conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into registration(surName, otherName, stateOrg, locGov, offCon, tiTle, occupaTion, posRan, birthDate, eMail,
-        mobNum, areaSpec, nextName, nextAdd, nextRel, nextPhon, permAdd, sponsNam, sponsAdd, chalNum, nameReg, studAll)
-        values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssisissssissssss",$surName, $otherName, $stateOrg, $locGov, $offCon, $tiTle, $occupaTion, $posRan, $birthDate, $eMail,
-        $mobNum, $areaSpec, $nextName, $nextAdd, $nextRel, $nextPhon, $permAdd, $sponsNam, $sponsAdd, $chalNum, $nameReg, $studAll);
+        $stmt = $conn->prepare("insert into registration(surName, otherName, stateOrg, locGov, offCon, tiTle, occupaTion, posRan, birthDate, eMail, mobNum, areaSpec, nextName, nextAdd, nextRel, nextPhon, permAdd, sponsNam, sponsAdd, chalNum, nameReg, studAll) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssssssisissssissssss",$surName, $otherName, $stateOrg, $locGov, $offCon, $tiTle, $occupaTion, $posRan, $birthDate, $eMail, $mobNum, $areaSpec, $nextName, $nextAdd, $nextRel, $nextPhon, $permAdd, $sponsNam, $sponsAdd, $chalNum, $nameReg, $studAll);
         $stmt->execute();
         echo "Registration Successful...";
         $stmt->close();
